@@ -1,6 +1,6 @@
 ## Learning Algorithm
 
-The learning algorithm used to train the agent was a Deep Deterministic Policy Gradient model trained with using Experience Replay Buffer and OU noise.
+The learning algorithm used to train the agent was a Deep Deterministic Policy Gradient (DDPG) model trained with using Experience Replay Buffer and OU noise.
 
 #### The Model Architecture for the Actor Network:
 
@@ -38,12 +38,12 @@ The learning algorithm used to train the agent was a Deep Deterministic Policy G
 - LR_ACTOR = 2e-4         # learning rate of the actor
 - LR_CRITIC = 2e-4        # learning rate of the critic
 - WEIGHT_DECAY = 0        # L2 weight decay
-- THETA: 0.15             #
-- SIGMA: 0.1              #
+- THETA: 0.15             # revert speed to mean
+- SIGMA: 0.1              # degree of volatility
 
 ## Plot of Rewards
 
-Here we see a plot of rewards per training episode to illustrate that the agent is able to receive an average reward (over 100 episodes) of at least +30. The environment was solved in XXX episodes.
+Here we see a plot of rewards per training episode to illustrate that the agent is able to receive an average reward (over 100 episodes) of at least +30. The environment was solved in less than 222 episodes.
 
 
 ![reward_plot](photos/reward_plot.png)
@@ -52,6 +52,6 @@ Here we see a plot of rewards per training episode to illustrate that the agent 
 
 There are many ways that this agent could be improved in the future. I will list a few ideas here that could be tested.
 
-1. Experiment more with the model hyperparameters.
-2.
-3. Use Prioritized experience replay.
+1. Experiment more with the actor and critic model networks. More layers, more nodes, batchnorm, dropout.
+2. Experiment more with the model training hyperparameters. Batch_size, LR, sigma, weight decay.
+3. Try different models that have proven to be successful such as Trust Region Policy Optimization TRPO or Truncated Natural Policy Gradient (TNPG).
