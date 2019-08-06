@@ -15,6 +15,7 @@ The learning algorithm used to train the agent was a Deep Deterministic Policy G
 - Linear Layer 3 (inputs = 300, outputs = 4)
 - Tanh Activation Function
 
+![Actor](photos/Actor.png)
 
 #### The Model Architecture for the Critic Network:
 
@@ -28,6 +29,8 @@ The learning algorithm used to train the agent was a Deep Deterministic Policy G
 - Linear Layer 2 (inputs = 404, outputs = 300)
 - Relu Activation Function
 - Linear Layer 3 (inputs = 300, outputs = 4)
+
+![Critic](photos/Critic.png)
 
 #### The Hyperparameters:
 
@@ -46,7 +49,7 @@ The learning algorithm used to train the agent was a Deep Deterministic Policy G
 Here we see a plot of rewards per training episode to illustrate that the agent is able to receive an average reward (over 100 episodes) of at least +30. The environment was solved in less than 222 episodes.
 
 
-![reward_plot](photos/reward_plot.png)
+![reward_plot](photos/DDPG_Plot.png)
 
 ## Ideas for Future Work
 
