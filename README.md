@@ -32,4 +32,33 @@ The project was done using python 3 and has the following library dependencies t
 
 To run the code and train the model yourself you'll need to download the Unity environment as well Continuous_Control.ipynb, model.py, and ddpg_agent.py from this repository.
 
+This project runs locally on Windows 10 environment. Here are the steps to setup the environment:
+1. Create (and activate) a new environment with Python 3.6.
+	```
+	- __Windows__: 
+	```bash
+	conda create --name drlnd python=3.6 
+	activate drlnd
+	```
+
+2. Install these dependencies in the environment on windows 10
+	- __Install Unity ML-Agents__
+	```bash
+	pip3 install --user mlagents
+	```	
+	- __Install Unity Agents__
+	```bash
+	pip install unityagents
+	```	
+	- __Install Pytorch__
+	```bash
+	conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
+	```
+3. Download the `Reacher` environment from one of the links below and select the environment that matches your Windows operating system:
+    - **_Version 1: One (1) Agent_**
+        - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
+        - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
+ 
+4. Place the file in the `continuous_control/` folder, and unzip (or decompress) the file.
+
 Open the Continuous_Control.ipynb jupyter notebook in your browser and run the code cells from top to bottom. In the notebook you'll see a visualization of the agent learning the task and after the agent has scored an average of at least +30 over 100 consecutive episodes the agent's model parameters will be saved to a .pth file.
