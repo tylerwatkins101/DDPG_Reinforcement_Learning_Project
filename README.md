@@ -61,4 +61,4 @@ This project runs locally on Windows 10 environment. Here are the steps to setup
  
 4. Place the file in the `continuous_control/` folder, and unzip (or decompress) the file.
 
-Open the Continuous_Control.ipynb jupyter notebook in your browser and run the code cells from top to bottom. In the notebook you'll see a visualization of the agent learning the task and after the agent has scored an average of at least +30 over 100 consecutive episodes the agent's model parameters will be saved to a .pth file.
+5. Open the Continuous_Control.ipynb jupyter notebook in your browser and run the code cells from top to bottom. In the notebook you'll see a visualization of the agent learning the task and after the agent has scored an average of at least +30 over 100 consecutive episodes the agent's model parameters will be saved to a .pth file.
