@@ -2,6 +2,8 @@
 
 The learning algorithm used to train the agent was a Deep Deterministic Policy Gradient (DDPG) model trained with using Experience Replay Buffer and OU noise.
 
+Deep deterministic policy gradient (DDPG) is a variant of DPG where the policy and critic Q are approximated with deep neural networks. DDPG is an off-policy algorithm, and samples trajectories from a replay buffer of experiences that are stored throughout training. DDPG also makes use of a target network, as in DQN.
+
 #### The Model Architecture for the Actor Network:
 
 - Inputs = State Space Size (33)
